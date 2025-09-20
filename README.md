@@ -2,6 +2,9 @@
 
 A full-stack web application for tracking personal expenses, built from scratch with a C++ backend, SQLite database, and an interactive vanilla JavaScript frontend.
 
+## Live Demo
+![Project Demo](demo.gif)
+
 ## Features
 - Add and view expenses in real-time.
 - Dynamic summary cards for total spending, transaction count, and average cost.
