@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+    <main class="container">
+        <header>
+            <h1>Finance Tracker 📊</h1>
+            <p>A simple way to track your expenses.</p>
+        </header>
+
+        <section class="grid" id="summary-section">
+            <div class="card">
+                <h3 id="total-expenses">₹0.00</h3>
+                <p>Total Expenses</p>
+            </div>
+            <div class="card">
+                <h3 id="expense-count">0</h3>
+                <p>Total Transactions</p>
+            </div>
+            <div class="card">
+                <h3 id="avg-expense">₹0.00</h3>
+                <p>Average Transaction</p>
+            </div>
+        </section>
+
+        <section class="card">
+             <h2>Expenses by Category</h2>
+             <canvas id="expense-chart"></canvas>
+        </section>
+
+        <details>
+            <summary role="button" class="secondary">Add New Expense</summary>
+            <form id="expense-form">
+                <div class="grid">
+                    <input type="number" id="amount" placeholder="Amount" step="0.01" required>
+                    <input type="text" id="description" placeholder="Description" required>
+                </div>
+                <div class="grid">
+                    <select id="category" required></select>
+                    <input type="date" id="date" required>
+                </div>
+                <button type="submit">Add Expense</button>
+            </form>
+        </details>
+
+        <section>
+            <h2>History</h2>
+            <figure>
+                <table role="grid">
+                    <thead>
+                        <tr>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenses-table-body">
+                        </tbody>
+                </table>
+            </figure>
+        </section>
+        
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
