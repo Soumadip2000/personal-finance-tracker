@@ -5,7 +5,8 @@ A full-stack web application for tracking personal expenses, built from scratch 
 ## Live Demo
 ![Project Demo](demo.gif)
 
-### ![public](#public)
+### Project 
+[public](#public)
 
 
 ## Features
