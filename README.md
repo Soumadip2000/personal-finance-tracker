@@ -5,6 +5,9 @@ A full-stack web application for tracking personal expenses, built from scratch 
 ## Live Demo
 ![Project Demo](demo.gif)
 
+### 📂 [Public Folder](#public)
+
+
 ## Features
 - Add and view expenses in real-time.
 - Dynamic summary cards for total spending, transaction count, and average cost.
